@@ -16,9 +16,9 @@ export const getServerSideProps: GetServerSideProps = async ({ req, query }) => 
     let destination = '/yourWebContentPage'; // Default to web content page for demonstration
 
     if (md.os() === 'iOS') {
-      destination = '/iosPage'; // iOS-specific page
+      destination = 'https://apps.apple.com/us/app/pup-diary/id6476625040'; // iOS-specific page
     } else if (md.os() === 'AndroidOS') {
-      destination = '/androidPage'; // Android-specific page
+      destination = 'https://play.google.com/store/apps/details?id=com.bensforge.pupdiary'; // Android-specific page
     }
 
     return {
