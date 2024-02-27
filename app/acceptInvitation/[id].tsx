@@ -9,7 +9,7 @@ interface AcceptInvitationProps {
 
 export const getServerSideProps: GetServerSideProps = async ({ req, query }) => {
   const md = new MobileDetect(req.headers['user-agent']!);
-  const invitationId = query.invitationId as string; // Ensure proper typing
+
 
   // Using mobile-detect for more accurate device detection
   if (md.mobile()) {
